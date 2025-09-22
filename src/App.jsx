@@ -13,19 +13,51 @@ export default function App() {
   const [activeImage, setActiveImage] = useState(null);
 
   const services = [
-    { id: 1, title: 'Brand Identity', desc: 'Full identity: logo, color, typography.' },
-    { id: 2, title: 'Logo Refresh', desc: 'Modernize an existing logo.' },
-    { id: 3, title: 'Mascot Design', desc: 'Character-driven logos for fun brands.' },
-    { id: 4, title: 'Wordmark & Monogram', desc: 'Type-focused logo solutions.' },
-    { id: 5, title: 'Packaging Marks', desc: 'Logo variants for packaging.' },
-    { id: 6, title: 'Brand Guidelines', desc: 'Rules to keep your brand consistent.' }
+    { id: 1, title: 'Brand strategy & market positioning', desc: 'A holistic identity that captures the soul of your business.' },
+    { id: 2, title: 'Brand Naming & messaging', desc: 'Crafting a compelling narrative and perfect name to tell your story.' },
+    { id: 3, title: 'Visual identity & logo', desc: 'Crafting type-centric logos where form and font tell a compelling tale.' },
+    { id: 4, title: 'Brand book & style guide', desc: 'A comprehensive guide to navigate and maintain your brand’s visual integrity.' },
+    { id: 5, title: 'Marketing Assets', desc: 'Designing a mark that translates seamlessly and beautifully to a tangible product.' },
+    { id: 6, title: 'Rebranding', desc: 'We honor your heritage while forging a new, contemporary visual story.' }
+  ];
+  
+  const portfolio = [
+    { id: 1, title: 'Mantra: Organic Skincare', image: 'https://images.unsplash.com/photo-1601004311029-79a0291040f7?auto=format&fit=crop&w=1200&q=60' },
+    { id: 2, title: 'Nexus: Tech Solutions', image: 'https://images.unsplash.com/photo-1522864614619-ec1ab84b5c73?auto=format&fit=crop&w=1200&q=60' },
+    { id: 3, title: 'Veridian: Coffee & Roasters', image: 'https://images.unsplash.com/photo-1594904033100-2f95b058c42b?auto=format&fit=crop&w=1200&q=60' },
+    { id: 4, title: 'The Lettermark Collection', image: 'https://images.unsplash.com/photo-1510613217436-12004273c54f?auto=format&fit=crop&w=1200&q=60' },
+    { id: 5, title: 'Urban Cycles', image: 'https://images.unsplash.com/photo-1595152778816-36916a9082ac?auto=format&fit=crop&w=1200&q=60' },
+    { id: 6, title: 'Brand Identity Mockups', image: 'https://images.unsplash.com/photo-1582210852445-3165a20835f8?auto=format&fit=crop&w=1200&q=60' },
+    { id: 7, title: 'Infi-Tech', image: 'https://images.unsplash.com/photo-1588691517452-9457d54032d8?auto=format&fit=crop&w=1200&q=60' },
+    { id: 8, title: 'Faux Vintage Co.', image: 'https://images.unsplash.com/photo-1549495146-5b682650f92b?auto=format&fit=crop&w=1200&q=60' }
   ];
 
-  const portfolio = new Array(8).fill(0).map((_, i) => ({
-    id: i,
-    title: `Project ${i + 1}`,
-    image: `https://images.unsplash.com/photo-1503602642458-232111445657?auto=format&fit=crop&w=1200&q=60&ixid=${i}`
-  }));
+  const whyChooseUsData = [
+    {
+      quote: "World Expo experts of rare excellence and invaluable partners on the international stage",
+      author: "Alexandre Bocquillon",
+      role: "CEO",
+      company: "Circle x Square",
+      companyDesc: "World Expo Consulting Firm",
+      logo: "https://placehold.co/40x40/6366F1/FFFFFF?text=CS"
+    },
+    {
+      quote: "They successfully turned our scientific depth into accessible narratives",
+      author: "Delphine Larrousse",
+      role: "Director of Global Engagement",
+      company: "World Vegetable Center",
+      companyDesc: "Non-for-profit international R&D center dedicated to vegetables",
+      logo: "https://placehold.co/40x40/06B6D4/FFFFFF?text=WV"
+    },
+    {
+      quote: "A true strategic partner, deeply human — one that brings meaning and drives action",
+      author: "Dalel Mehrzi",
+      role: "Program Director",
+      company: "Almadanya",
+      companyDesc: "NGO Development & Education",
+      logo: "https://placehold.co/40x40/F59E0B/FFFFFF?text=AL"
+    }
+  ];
 
   function handleEnqSubmit(e) {
     e.preventDefault();
@@ -52,10 +84,10 @@ export default function App() {
   };
 
   const heroImages = [
-    'https://images.unsplash.com/photo-1503602642458-232111445657?auto=format&fit=crop&w=1200&q=60', // Modern logo mockup
-    'https://images.unsplash.com/photo-1503602642458-232111445657?auto=format&fit=crop&w=1200&q=60', // Elegant logo on paper
-    'https://images.unsplash.com/photo-1503602642458-232111445657?auto=format&fit=crop&w=1200&q=60', // Minimalist logo on business card
-    'https://images.unsplash.com/photo-1503602642458-232111445657?auto=format&fit=crop&w=1200&q=60', // Colorful logo on screen
+    'https://creativebay.ae/wp-content/uploads/2024/06/Untitled-design-1.png', // Modern logo mockup
+    'https://creativebay.ae/wp-content/uploads/2024/06/service-3.jpg', // Elegant logo on paper
+    'https://creativebay.ae/wp-content/uploads/2024/06/service-2.jpg', // Minimalist logo on business card
+    'https://creativebay.ae/wp-content/uploads/2024/06/service-1.jpg', // Colorful logo on screen
   ];
 
 
@@ -150,9 +182,9 @@ export default function App() {
               <motion.div
                 variants={itemVariants}
                 className="col-span-2 rounded-3xl p-6 shadow-lg h-64 flex flex-col justify-end"
-                style={{ backgroundImage: `url('https://images.unsplash.com/photo-1503602642458-232111445657?auto=format&fit=crop&w=1200&q=60')`, backgroundSize: 'cover', backgroundPosition: 'center' }}
+                style={{ backgroundImage: `url('https://creativebay.ae/wp-content/uploads/2025/08/H1-1.png')`, backgroundSize: 'cover', backgroundPosition: 'center' }}
               >
-                <div className="mt-auto text-sm text-white bg-black/30 rounded p-1 text-center">Clean, flexible & brand-led.</div>
+                {/* <div className="mt-auto text-sm text-white bg-black/30 rounded p-1 text-center">Clean, flexible & brand-led.</div> */}
               </motion.div>
 
               {/* Smaller Images */}
@@ -218,6 +250,39 @@ export default function App() {
           </div>
         </section>
 
+        <section id="why-us" className="py-12 bg-gray-900">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 className="text-2xl font-bold text-white text-center">Why people choose us?</h2>
+            <p className="mt-2 text-gray-400 text-center">Stories from the brands we've helped build.</p>
+
+            <div className="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6">
+              {whyChooseUsData.map((item, index) => (
+                <div key={index} className="bg-gray-800 p-6 rounded-xl shadow-sm border border-gray-700 flex flex-col justify-between">
+                  <div>
+                    <div className="flex text-yellow-400">
+                      <StarIcon />
+                      <StarIcon />
+                      <StarIcon />
+                      <StarIcon />
+                      <StarIcon />
+                    </div>
+                    <p className="text-gray-200 mt-4">{item.quote}</p>
+                    <a href="#" className="mt-4 text-indigo-400 text-sm font-medium">Read full testimonial →</a>
+                  </div>
+                  <div className="mt-6 pt-4 border-t border-gray-700 flex items-center">
+                    <img src={item.logo} alt={item.company} className="w-10 h-10 rounded-full mr-4" />
+                    <div>
+                      <div className="font-semibold text-white">{item.author}</div>
+                      <div className="text-sm text-gray-500">{item.role}</div>
+                      <div className="text-xs text-gray-500">{item.companyDesc}</div>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
         {/* Testimonials */}
         <Testimonials />
 
@@ -236,17 +301,32 @@ export default function App() {
             </div>
 
             <div className="md:col-span-2">
-              <form onSubmit={handleEnqSubmit} className="bg-gray-800 p-6 rounded-xl shadow grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <input required placeholder="Full name" value={enq.name} onChange={e => setEnq({...enq, name: e.target.value})} className="px-3 py-2 border border-gray-700 rounded bg-gray-800 text-white placeholder-gray-400" />
-                <input required placeholder="Email" value={enq.email} onChange={e => setEnq({...enq, email: e.target.value})} className="px-3 py-2 border border-gray-700 rounded bg-gray-800 text-white placeholder-gray-400" />
-                <input placeholder="Company (optional)" className="px-3 py-2 border border-gray-700 rounded bg-gray-800 text-white placeholder-gray-400 sm:col-span-2" />
-                <textarea placeholder="Describe your project" value={enq.message} onChange={e => setEnq({...enq, message: e.target.value})} className="px-3 py-2 border border-gray-700 rounded bg-gray-800 text-white placeholder-gray-400 sm:col-span-2" rows={4} />
-                <div className="sm:col-span-2 flex items-center justify-between">
-                  <button type="submit" className="px-4 py-2 rounded-lg bg-indigo-600 text-white">Send message</button>
-                  <small className="text-xs text-gray-500">Or email us at hello@creatorlogos.com</small>
-                </div>
-              </form>
-            </div>
+    <form onSubmit={handleEnqSubmit} className="bg-gray-800 p-6 rounded-xl shadow grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <input required placeholder="Full name" value={enq.name} onChange={e => setEnq({...enq, name: e.target.value})} className="px-3 py-2 border border-gray-700 rounded bg-gray-800 text-white placeholder-gray-400" />
+        <input required placeholder="Email" value={enq.email} onChange={e => setEnq({...enq, email: e.target.value})} className="px-3 py-2 border border-gray-700 rounded bg-gray-800 text-white placeholder-gray-400" />
+        <input placeholder="Company (optional)" className="px-3 py-2 border border-gray-700 rounded bg-gray-800 text-white placeholder-gray-400 sm:col-span-2" />
+        
+        {/* New Phone Number Input with Country Code */}
+        <div className="sm:col-span-2 flex items-center border border-gray-700 rounded bg-gray-800">
+            <select className="bg-gray-800 text-white px-3 py-2 border-r border-gray-700 rounded-l">
+                <option value="+91">IND +91</option>
+                <option value="+971">UAE +971</option>
+            </select>
+            <input 
+                type="tel"
+                placeholder="Phone number"
+                className="flex-grow px-3 py-2 bg-gray-800 text-white placeholder-gray-400 rounded-r"
+            />
+        </div>
+
+        <textarea placeholder="Describe your project" value={enq.message} onChange={e => setEnq({...enq, message: e.target.value})} className="px-3 py-2 border border-gray-700 rounded bg-gray-800 text-white placeholder-gray-400 sm:col-span-2" rows={4} />
+        
+        <div className="sm:col-span-2 flex items-center justify-between">
+            <button type="submit" className="px-4 py-2 rounded-lg bg-indigo-600 text-white">Send message</button>
+            <small className="text-xs text-gray-500">Or email us at hello@creatorlogos.com</small>
+        </div>
+    </form>
+</div>
 
             <div className="md:col-span-3 mt-6 text-center text-xs text-white-500">© {new Date().getFullYear()} CreatorLogos — Crafted with ❤️</div>
           </div>
@@ -278,6 +358,22 @@ function LogoMark() {
           <stop offset="1" stopColor="#06B6D4" />
         </linearGradient>
       </defs>
+    </svg>
+  );
+}
+
+function ArrowRightIcon() {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1.5 15h-1c-.83 0-1.5-.67-1.5-1.5v-7c0-.83.67-1.5 1.5-1.5h1c.83 0 1.5.67 1.5 1.5v7c0 .83-.67 1.5-1.5 1.5zM12 12.5l5.5-5.5v11l-5.5-5.5z" />
+    </svg>
+  );
+}
+
+function StarIcon() {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
     </svg>
   );
 }
