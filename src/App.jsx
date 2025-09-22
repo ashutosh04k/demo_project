@@ -161,6 +161,17 @@ export default function App() {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                 <input value={enq.name} onChange={e => setEnq({...enq, name: e.target.value})} required placeholder="Your name" className="px-3 py-2 border border-gray-700 rounded bg-gray-800 text-white placeholder-gray-400" />
                 <input value={enq.email} onChange={e => setEnq({...enq, email: e.target.value})} required placeholder="Email" type="email" className="px-3 py-2 border border-gray-700 rounded bg-gray-800 text-white placeholder-gray-400" />
+                <div className="sm:col-span-2 flex items-center border border-gray-700 rounded bg-gray-800">
+                <select className="bg-gray-800 text-white px-3 py-2 border-r border-gray-700 rounded-l">
+                    <option value="+91">IND +91</option>
+                    <option value="+971">UAE +971</option>
+                </select>
+                <input 
+                    type="tel"
+                    placeholder="Phone number"
+                    className="flex-grow px-3 py-2 bg-gray-800 text-white placeholder-gray-400 rounded-r"
+                />
+            </div>
               </div>
               <textarea value={enq.message} onChange={e => setEnq({...enq, message: e.target.value})} placeholder="Tell us about your project" className="w-full mt-3 px-3 py-2 border border-gray-700 rounded bg-gray-800 text-white placeholder-gray-400" rows={3} />
               <div className="mt-3 flex items-center justify-between">
