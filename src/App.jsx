@@ -8,7 +8,8 @@ import s3 from './assets/services/s3.jpg';
 import s4 from './assets/services/s4.png';
 import s5 from './assets/services/s5.png';
 import s6 from './assets/services/s6.png';
-import h1 from './assets/H1-1.png'
+import h1 from './assets/H1-1.png';
+import logo from './assets/logo.svg';  
 // Single-file React component for a Logo Designer website
 // Uses Tailwind CSS for styling. Default export is the top-level component.
 
@@ -105,8 +106,8 @@ export default function App() {
           <div className="flex items-center justify-between h-16">
             <div className="flex items-center gap-4">
               <div className="flex items-center gap-2">
-                <LogoMark />
-                <span className="font-semibold text-lg text-white">CreatorLogos</span>
+                <img src={logo} alt="Logo" className="w-25 h-25" />
+                {/* <span className="font-semibold text-lg text-white">Creativebae</span> */}
               </div>
               <nav className="hidden md:flex gap-6 ml-8">
                 <a href="#home" className="hover:text-indigo-400">Home</a>
@@ -323,8 +324,8 @@ export default function App() {
 
               <div className="mt-4 space-y-2 text-sm text-gray-400">
                 <div>📍 102 Creative Lane, Mumbai, India</div>
-                <div>✉️ hello@creatorlogos.com</div>
-                <div>📞 +91 98765 43210</div>
+                <div>✉️ hello@Creativebae.com</div>
+                <div>📞 +971 502 826 450</div>
               </div>
             </div>
 
@@ -351,12 +352,12 @@ export default function App() {
         
         <div className="sm:col-span-2 flex items-center justify-between">
             <button type="submit" className="px-4 py-2 rounded-lg bg-indigo-600 text-white">Send message</button>
-            <small className="text-xs text-gray-500">Or email us at hello@creatorlogos.com</small>
+            <small className="text-xs text-gray-500">Or email us at hello@Creativebae.com</small>
         </div>
     </form>
 </div>
 
-            <div className="md:col-span-3 mt-6 text-center text-xs text-white-500">© {new Date().getFullYear()} CreatorLogos — Crafted with ❤️</div>
+            <div className="md:col-span-3 mt-6 text-center text-xs text-white-500">© {new Date().getFullYear()} Creativebae — Crafted with ❤️</div>
           </div>
         </footer>
       </main>
