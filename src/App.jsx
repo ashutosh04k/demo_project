@@ -2,7 +2,13 @@ import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import Testimonials from './components/Testimonials';
 import { FaCircleArrowRight } from "react-icons/fa6";
-
+import s1 from './assets/services/S1.png';
+import s2 from './assets/services/s2.png';
+import s3 from './assets/services/s3.jpg';
+import s4 from './assets/services/s4.png';
+import s5 from './assets/services/s5.png';
+import s6 from './assets/services/s6.png';
+import h1 from './assets/H1-1.png'
 // Single-file React component for a Logo Designer website
 // Uses Tailwind CSS for styling. Default export is the top-level component.
 
@@ -13,23 +19,23 @@ export default function App() {
   const [activeImage, setActiveImage] = useState(null);
 
   const services = [
-    { id: 1, title: 'Brand strategy & market positioning', desc: 'A holistic identity that captures the soul of your business.' },
-    { id: 2, title: 'Brand Naming & messaging', desc: 'Crafting a compelling narrative and perfect name to tell your story.' },
-    { id: 3, title: 'Visual identity & logo', desc: 'Crafting type-centric logos where form and font tell a compelling tale.' },
-    { id: 4, title: 'Brand book & style guide', desc: 'A comprehensive guide to navigate and maintain your brand’s visual integrity.' },
-    { id: 5, title: 'Marketing Assets', desc: 'Designing a mark that translates seamlessly and beautifully to a tangible product.' },
-    { id: 6, title: 'Rebranding', desc: 'We honor your heritage while forging a new, contemporary visual story.' }
+    { id: 1, title: 'Social Media', desc: 'Build conversations, not just campaigns.',bgUrl: s1 },
+    { id: 2, title: 'Animation', desc: 'Breathe life into ideas with motion that captivates.',bgUrl: s2 },
+    { id: 3, title: 'Motion Design', desc: 'We create your graphic designs according to your budget and your needs. Reveal your brand image and capture your audience.',bgUrl: s3 },
+    { id: 4, title: 'Branding', desc: 'Shape an identity that’s bold, clear, and lasting.',bgUrl: s4 },
+    { id: 5, title: 'Illustration', desc: 'Add character and originality with custom artwork.',bgUrl: s5 },
+    { id: 6, title: 'AI', desc: 'Harness the future to create smarter content.',bgUrl: s6 }
   ];
   
   const portfolio = [
-    { id: 1, title: 'Mantra: Organic Skincare', image: 'https://images.unsplash.com/photo-1601004311029-79a0291040f7?auto=format&fit=crop&w=1200&q=60' },
-    { id: 2, title: 'Nexus: Tech Solutions', image: 'https://images.unsplash.com/photo-1522864614619-ec1ab84b5c73?auto=format&fit=crop&w=1200&q=60' },
-    { id: 3, title: 'Veridian: Coffee & Roasters', image: 'https://images.unsplash.com/photo-1594904033100-2f95b058c42b?auto=format&fit=crop&w=1200&q=60' },
-    { id: 4, title: 'The Lettermark Collection', image: 'https://images.unsplash.com/photo-1510613217436-12004273c54f?auto=format&fit=crop&w=1200&q=60' },
-    { id: 5, title: 'Urban Cycles', image: 'https://images.unsplash.com/photo-1595152778816-36916a9082ac?auto=format&fit=crop&w=1200&q=60' },
-    { id: 6, title: 'Brand Identity Mockups', image: 'https://images.unsplash.com/photo-1582210852445-3165a20835f8?auto=format&fit=crop&w=1200&q=60' },
-    { id: 7, title: 'Infi-Tech', image: 'https://images.unsplash.com/photo-1588691517452-9457d54032d8?auto=format&fit=crop&w=1200&q=60' },
-    { id: 8, title: 'Faux Vintage Co.', image: 'https://images.unsplash.com/photo-1549495146-5b682650f92b?auto=format&fit=crop&w=1200&q=60' }
+    { id: 1, title: 'Lakme', image: 'https://creativebay.ae/wp-content/uploads/2025/08/3-1.png' },
+    { id: 2, title: 'John Jacob', image: 'https://creativebay.ae/wp-content/uploads/2025/08/9.png' },
+    { id: 3, title: 'M2', image: 'https://creativebay.ae/wp-content/uploads/2025/08/13.png' },
+    { id: 4, title: 'Paytm', image: 'https://creativebay.ae/wp-content/uploads/2025/08/7.png' },
+    { id: 5, title: 'Jack Danials', image: 'https://creativebay.ae/wp-content/uploads/2025/08/11.png' },
+    { id: 6, title: 'Subway', image: 'https://creativebay.ae/wp-content/uploads/2025/08/10.png' },
+    { id: 7, title: 'Miko', image: 'https://creativebay.ae/wp-content/uploads/2025/08/5.png' },
+    { id: 8, title: 'B Natural', image: 'https://creativebay.ae/wp-content/uploads/2025/08/8.png' }
   ];
 
   const whyChooseUsData = [
@@ -193,7 +199,7 @@ export default function App() {
               <motion.div
                 variants={itemVariants}
                 className="col-span-2 rounded-3xl p-6 shadow-lg h-64 flex flex-col justify-end"
-                style={{ backgroundImage: `url('https://creativebay.ae/wp-content/uploads/2025/08/H1-1.png')`, backgroundSize: 'cover', backgroundPosition: 'center' }}
+                style={{ backgroundImage: `url(${h1})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
               >
                 {/* <div className="mt-auto text-sm text-white bg-black/30 rounded p-1 text-center">Clean, flexible & brand-led.</div> */}
               </motion.div>
@@ -218,16 +224,27 @@ export default function App() {
             <p className="mt-2 text-gray-400">From single-logo packages to full brand systems.</p>
 
             <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-              {services.map(s => (
-                <motion.article key={s.id} whileHover={{ y: -6 }} className="p-6 rounded-xl border border-gray-700 shadow-sm bg-gray-800">
-                  <h3 className="font-semibold text-lg text-white">{s.title}</h3>
-                  <p className="mt-2 text-sm text-gray-400">{s.desc}</p>
-                  <div className="mt-4">
-                    <button className="text-indigo-400 font-medium">Learn more →</button>
-                  </div>
-                </motion.article>
-              ))}
-            </div>
+  {services.map(s => (
+    <motion.article 
+      key={s.id} 
+      whileHover={{ y: -6 }} 
+      className="p-6 rounded-xl border border-gray-700 shadow-sm flex flex-col h-full relative overflow-hidden"
+    >
+      <div 
+        className="absolute inset-0 bg-cover bg-center z-0"
+        style={{ backgroundImage: `url(${s.bgUrl})` }}
+      />
+      <div className="absolute inset-0 bg-black/60 z-0" />
+      <div className="relative z-10 flex flex-col h-full">
+        <h3 className="font-semibold text-lg text-white">{s.title}</h3>
+        <p className="mt-2 text-sm text-gray-200">{s.desc}</p>
+        <div className="mt-4 mt-auto">
+          <button className="text-indigo-300 hover:text-white font-medium transition-colors">Learn more →</button>
+        </div>
+      </div>
+    </motion.article>
+  ))}
+</div>
           </div>
         </section>
 
