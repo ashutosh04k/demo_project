@@ -352,6 +352,7 @@ export default function App() {
                 <div>✉️ rohan@shadesandmotion.com</div>
                 <div style={{ marginLeft: '15px' }}>sparlee@shadesandmotion.com</div>
                 <div>📞 +971 502 826 450</div>
+                <div style={{ marginLeft: '15px' }}> +971 547 958 431</div>
               </div>
             </div>
 
