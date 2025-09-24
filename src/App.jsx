@@ -9,7 +9,10 @@ import s4 from './assets/services/s4.png';
 import s5 from './assets/services/s5.png';
 import s6 from './assets/services/s6.png';
 import h1 from './assets/H1-1.png';
-import logo from './assets/logo.svg';  
+import logo from './assets/logo.svg';
+import unesco from './assets/marketingassets/unesco.png';
+import mg from './assets/marketingassets/mg.jpg';
+import wb from './assets/marketingassets/wb.jpeg';
 // Single-file React component for a Logo Designer website
 // Uses Tailwind CSS for styling. Default export is the top-level component.
 
@@ -20,28 +23,24 @@ export default function App() {
   const [activeImage, setActiveImage] = useState(null);
 
   const services = [
-    { id: 1, title: 'Social Media', desc: 'Build conversations, not just campaigns.',bgUrl: s1 },
-    { id: 2, title: 'Animation', desc: 'Breathe life into ideas with motion that captivates.',bgUrl: s2 },
-    { id: 3, title: 'Motion Design', desc: 'We create your graphic designs according to your budget and your needs. Reveal your brand image and capture your audience.',bgUrl: s3 },
-    { id: 4, title: 'Branding', desc: 'Shape an identity that’s bold, clear, and lasting.',bgUrl: s4 },
-    { id: 5, title: 'Illustration', desc: 'Add character and originality with custom artwork.',bgUrl: s5 },
-    { id: 6, title: 'AI', desc: 'Harness the future to create smarter content.',bgUrl: s6 }
+    { id: 1, title: 'Social Media', desc: 'Content with a byte.', bgUrl: s1 },
+    { id: 2, title: '2D & 3D Animation', desc: 'From Characters to products, VFX, etc.', bgUrl: s2 },
+    { id: 3, title: 'Motion Design & Post Production', desc: ' Explainer films to Music Videos, Rotoscopy, Chroma Keying, Editing, DI, etc.', bgUrl: s3 },
+    { id: 4, title: 'Branding & Guidelines', desc: 'We try to solve the Identity of ‘Why I?’.', bgUrl: s4 },
+    { id: 5, title: 'Illustrations & Designs', desc: 'We create from sketches to dashes of colors. From Scenes to Scenarios!', bgUrl: s5 },
+    { id: 6, title: 'AI', desc: 'Everything AI, other than scripts and writing.', bgUrl: s6 }
   ];
-  
+
   const portfolio = [
-    { id: 1, title: 'Lakme', image: 'https://creativebay.ae/wp-content/uploads/2025/08/3-1.png' },
-    { id: 2, title: 'John Jacob', image: 'https://creativebay.ae/wp-content/uploads/2025/08/9.png' },
-    { id: 3, title: 'M2', image: 'https://creativebay.ae/wp-content/uploads/2025/08/13.png' },
-    { id: 4, title: 'Paytm', image: 'https://creativebay.ae/wp-content/uploads/2025/08/7.png' },
-    { id: 5, title: 'Jack Danials', image: 'https://creativebay.ae/wp-content/uploads/2025/08/11.png' },
-    { id: 6, title: 'Subway', image: 'https://creativebay.ae/wp-content/uploads/2025/08/10.png' },
-    { id: 7, title: 'Miko', image: 'https://creativebay.ae/wp-content/uploads/2025/08/5.png' },
-    { id: 8, title: 'B Natural', image: 'https://creativebay.ae/wp-content/uploads/2025/08/8.png' }
+    { id: 1, title: 'UNESCO', image: unesco },
+    { id: 2, title: 'Jack Danials', image: 'https://creativebay.ae/wp-content/uploads/2025/08/11.png' },
+    { id: 3, title: 'MG Motors', image: mg },
+    { id: 4, title: 'World Bank', image: wb },
   ];
 
   const whyChooseUsData = [
     {
-      quote: "World Expo experts of rare excellence and invaluable partners on the international stage",
+      quote: "Rooted in Dubai, designed for tomorrow.",
       author: "Alexandre Bocquillon",
       role: "CEO",
       company: "Circle x Square",
@@ -49,7 +48,7 @@ export default function App() {
       logo: "https://placehold.co/40x40/6366F1/FFFFFF?text=CS"
     },
     {
-      quote: "They successfully turned our scientific depth into accessible narratives",
+      quote: "We ask a lot of questions.",
       author: "Delphine Larrousse",
       role: "Director of Global Engagement",
       company: "World Vegetable Center",
@@ -57,7 +56,31 @@ export default function App() {
       logo: "https://placehold.co/40x40/06B6D4/FFFFFF?text=WV"
     },
     {
-      quote: "A true strategic partner, deeply human — one that brings meaning and drives action",
+      quote: "We take you through each step, transparently.",
+      author: "Dalel Mehrzi",
+      role: "Program Director",
+      company: "Almadanya",
+      companyDesc: "NGO Development & Education",
+      logo: "https://placehold.co/40x40/F59E0B/FFFFFF?text=AL"
+    },
+    {
+      quote: "We say as is! Be it budgets, creatives or opinions for your brand/product.",
+      author: "Dalel Mehrzi",
+      role: "Program Director",
+      company: "Almadanya",
+      companyDesc: "NGO Development & Education",
+      logo: "https://placehold.co/40x40/F59E0B/FFFFFF?text=AL"
+    },
+    {
+      quote: "Creative corporate doer’s, precision thinkers.",
+      author: "Dalel Mehrzi",
+      role: "Program Director",
+      company: "Almadanya",
+      companyDesc: "NGO Development & Education",
+      logo: "https://placehold.co/40x40/F59E0B/FFFFFF?text=AL"
+    },
+    {
+      quote: "Social-first DNA.",
       author: "Dalel Mehrzi",
       role: "Program Director",
       company: "Almadanya",
@@ -119,9 +142,9 @@ export default function App() {
             </div>
 
             <div className="flex items-center gap-4">
-            <a href="#enquiry" className="hidden md:inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-indigo-600 text-white font-medium shadow-sm hover:opacity-95 whitespace-nowrap">
-              Book a Free Demo <FaCircleArrowRight />
-            </a>
+              <a href="#enquiry" className="hidden md:inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-indigo-600 text-white font-medium shadow-sm hover:opacity-95 whitespace-nowrap">
+                Book a Free Demo <FaCircleArrowRight />
+              </a>
               <button
                 onClick={() => setMenuOpen(v => !v)}
                 className="md:hidden p-2 rounded-lg border border-gray-700 text-gray-200"
@@ -152,10 +175,10 @@ export default function App() {
         <section id="home" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-20 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
           <div>
             <motion.h1 initial={{ y: 20, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.6 }} className="text-4xl sm:text-5xl font-extrabold leading-tight text-white">
-              Memorable logos. Distinctive brands.
+              Unbothered Night Owls, working 9-5!
             </motion.h1>
             <motion.p initial={{ y: 20, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.8 }} className="mt-4 text-lg text-gray-400">
-              We design logos that tell your story at a glance. Fast turnaround, strategic thinking and pixel-perfect execution.
+              From Dubai to the world. We craft visions and ideas that look like seashells on a Bay. These result as designs and films that make thumbs; Stop the Scroll and Spark a Talk.
             </motion.p>
 
             <div className="mt-6 flex gap-3 items-center">
@@ -166,21 +189,21 @@ export default function App() {
             {/* Enquiry short form in hero */}
             <form id="enquiry" onSubmit={handleEnqSubmit} className="mt-8 bg-gray-900 rounded-xl p-4 max-w-md shadow">
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                <input value={enq.name} onChange={e => setEnq({...enq, name: e.target.value})} required placeholder="Your name" className="px-3 py-2 border border-gray-700 rounded bg-gray-800 text-white placeholder-gray-400" />
-                <input value={enq.email} onChange={e => setEnq({...enq, email: e.target.value})} required placeholder="Email" type="email" className="px-3 py-2 border border-gray-700 rounded bg-gray-800 text-white placeholder-gray-400" />
+                <input value={enq.name} onChange={e => setEnq({ ...enq, name: e.target.value })} required placeholder="Your name" className="px-3 py-2 border border-gray-700 rounded bg-gray-800 text-white placeholder-gray-400" />
+                <input value={enq.email} onChange={e => setEnq({ ...enq, email: e.target.value })} required placeholder="Email" type="email" className="px-3 py-2 border border-gray-700 rounded bg-gray-800 text-white placeholder-gray-400" />
                 <div className="sm:col-span-2 flex items-center border border-gray-700 rounded bg-gray-800">
-                <select className="bg-gray-800 text-white px-3 py-2 border-r border-gray-700 rounded-l">
+                  <select className="bg-gray-800 text-white px-3 py-2 border-r border-gray-700 rounded-l">
                     <option value="+91">IND +91</option>
                     <option value="+971">UAE +971</option>
-                </select>
-                <input 
+                  </select>
+                  <input
                     type="tel"
                     placeholder="Phone number"
                     className="flex-grow px-3 py-2 bg-gray-800 text-white placeholder-gray-400 rounded-r"
-                />
-            </div>
+                  />
+                </div>
               </div>
-              <textarea value={enq.message} onChange={e => setEnq({...enq, message: e.target.value})} placeholder="Tell us about your project" className="w-full mt-3 px-3 py-2 border border-gray-700 rounded bg-gray-800 text-white placeholder-gray-400" rows={3} />
+              <textarea value={enq.message} onChange={e => setEnq({ ...enq, message: e.target.value })} placeholder="Tell us about your project" className="w-full mt-3 px-3 py-2 border border-gray-700 rounded bg-gray-800 text-white placeholder-gray-400" rows={3} />
               <div className="mt-3 flex items-center justify-between">
                 <button type="submit" className="px-4 py-2 rounded-lg bg-indigo-600 text-white font-medium">Send enquiry</button>
                 <small className="text-xs text-gray-500">Typical reply in 24 hours</small>
@@ -225,27 +248,27 @@ export default function App() {
             <p className="mt-2 text-gray-400">From single-logo packages to full brand systems.</p>
 
             <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-  {services.map(s => (
-    <motion.article 
-      key={s.id} 
-      whileHover={{ y: -6 }} 
-      className="p-6 rounded-xl border border-gray-700 shadow-sm flex flex-col h-full relative overflow-hidden"
-    >
-      <div 
-        className="absolute inset-0 bg-cover bg-center z-0"
-        style={{ backgroundImage: `url(${s.bgUrl})` }}
-      />
-      <div className="absolute inset-0 bg-black/60 z-0" />
-      <div className="relative z-10 flex flex-col h-full">
-        <h3 className="font-semibold text-lg text-white">{s.title}</h3>
-        <p className="mt-2 text-sm text-gray-200">{s.desc}</p>
-        <div className="mt-4 mt-auto">
-          <button className="text-indigo-300 hover:text-white font-medium transition-colors">Learn more →</button>
-        </div>
-      </div>
-    </motion.article>
-  ))}
-</div>
+              {services.map(s => (
+                <motion.article
+                  key={s.id}
+                  whileHover={{ y: -6 }}
+                  className="p-6 rounded-xl border border-gray-700 shadow-sm flex flex-col h-full relative overflow-hidden"
+                >
+                  <div
+                    className="absolute inset-0 bg-cover bg-center z-0"
+                    style={{ backgroundImage: `url(${s.bgUrl})` }}
+                  />
+                  <div className="absolute inset-0 bg-black/60 z-0" />
+                  <div className="relative z-10 flex flex-col h-full">
+                    <h3 className="font-semibold text-lg text-white">{s.title}</h3>
+                    <p className="mt-2 text-sm text-gray-200">{s.desc}</p>
+                    <div className="mt-4 mt-auto">
+                      <button className="text-indigo-300 hover:text-white font-medium transition-colors">Learn more →</button>
+                    </div>
+                  </div>
+                </motion.article>
+              ))}
+            </div>
           </div>
         </section>
 
@@ -254,7 +277,7 @@ export default function App() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex items-center justify-between">
               <h2 className="text-2xl font-bold text-white">Portfolio</h2>
-              <p className="text-gray-500 hidden sm:block">Selected identity and logo work.</p>
+              <p className="text-gray-500 hidden sm:block">We keep our feet in the air & head on the ground! Trying to build brands one frame at a time.</p>
             </div>
 
             <div className="mt-6 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
@@ -296,16 +319,16 @@ export default function App() {
                       <StarIcon />
                     </div>
                     <p className="text-gray-200 mt-4">{item.quote}</p>
-                    <a href="#" className="mt-4 text-indigo-400 text-sm font-medium">Read full testimonial →</a>
+                    {/* <a href="#" className="mt-4 text-indigo-400 text-sm font-medium">Read full testimonial →</a> */}
                   </div>
-                  <div className="mt-6 pt-4 border-t border-gray-700 flex items-center">
+                  {/* <div className="mt-6 pt-4 border-t border-gray-700 flex items-center">
                     <img src={item.logo} alt={item.company} className="w-10 h-10 rounded-full mr-4" />
                     <div>
                       <div className="font-semibold text-white">{item.author}</div>
                       <div className="text-sm text-gray-500">{item.role}</div>
                       <div className="text-xs text-gray-500">{item.companyDesc}</div>
                     </div>
-                  </div>
+                  </div> */}
                 </div>
               ))}
             </div>
@@ -320,42 +343,46 @@ export default function App() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-3 gap-8">
             <div>
               <h3 className="text-xl font-semibold text-white">Get in touch</h3>
-              <p className="mt-2 text-gray-400">We’d love to hear about your project. Fill the form or reach out directly.</p>
+              <p className="mt-2 text-gray-400">Hold on! If you are making those multiple calls, put us first in your list.</p>
+              <p className="mt-2 text-gray-400">Because we would want to understand your thought, then implement it as a pitch!</p>
 
               <div className="mt-4 space-y-2 text-sm text-gray-400">
-                <div>📍 102 Creative Lane, Mumbai, India</div>
-                <div>✉️ hello@Creativebae.com</div>
+                <div>📍 Rasis Business Center Office #77, </div>
+                <div style={{ marginLeft: '15px' }}>3rd Floor –Al Barsha – Dubai – United Arab Emirates</div>
+                <div>✉️ rohan@shadesandmotion.com</div>
+                <div style={{ marginLeft: '15px' }}>sparlee@shadesandmotion.com</div>
                 <div>📞 +971 502 826 450</div>
               </div>
             </div>
 
             <div className="md:col-span-2">
-    <form onSubmit={handleEnqSubmit} className="bg-gray-800 p-6 rounded-xl shadow grid grid-cols-1 sm:grid-cols-2 gap-4">
-        <input required placeholder="Full name" value={enq.name} onChange={e => setEnq({...enq, name: e.target.value})} className="px-3 py-2 border border-gray-700 rounded bg-gray-800 text-white placeholder-gray-400" />
-        <input required placeholder="Email" value={enq.email} onChange={e => setEnq({...enq, email: e.target.value})} className="px-3 py-2 border border-gray-700 rounded bg-gray-800 text-white placeholder-gray-400" />
-        <input placeholder="Company (optional)" className="px-3 py-2 border border-gray-700 rounded bg-gray-800 text-white placeholder-gray-400 sm:col-span-2" />
-        
-        {/* New Phone Number Input with Country Code */}
-        <div className="sm:col-span-2 flex items-center border border-gray-700 rounded bg-gray-800">
-            <select className="bg-gray-800 text-white px-3 py-2 border-r border-gray-700 rounded-l">
-                <option value="+91">IND +91</option>
-                <option value="+971">UAE +971</option>
-            </select>
-            <input 
-                type="tel"
-                placeholder="Phone number"
-                className="flex-grow px-3 py-2 bg-gray-800 text-white placeholder-gray-400 rounded-r"
-            />
-        </div>
+              <p className='text-white text-center mb-4'>If you have gone this far, we are hoping you found the vibe. So how about a short call?</p>
+              <form onSubmit={handleEnqSubmit} className="bg-gray-800 p-6 rounded-xl shadow grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <input required placeholder="Full name" value={enq.name} onChange={e => setEnq({ ...enq, name: e.target.value })} className="px-3 py-2 border border-gray-700 rounded bg-gray-800 text-white placeholder-gray-400" />
+                <input required placeholder="Email" value={enq.email} onChange={e => setEnq({ ...enq, email: e.target.value })} className="px-3 py-2 border border-gray-700 rounded bg-gray-800 text-white placeholder-gray-400" />
+                <input placeholder="Company (optional)" className="px-3 py-2 border border-gray-700 rounded bg-gray-800 text-white placeholder-gray-400 sm:col-span-2" />
 
-        <textarea placeholder="Describe your project" value={enq.message} onChange={e => setEnq({...enq, message: e.target.value})} className="px-3 py-2 border border-gray-700 rounded bg-gray-800 text-white placeholder-gray-400 sm:col-span-2" rows={4} />
-        
-        <div className="sm:col-span-2 flex items-center justify-between">
-            <button type="submit" className="px-4 py-2 rounded-lg bg-indigo-600 text-white">Send message</button>
-            <small className="text-xs text-gray-500">Or email us at hello@Creativebae.com</small>
-        </div>
-    </form>
-</div>
+                {/* New Phone Number Input with Country Code */}
+                <div className="sm:col-span-2 flex items-center border border-gray-700 rounded bg-gray-800">
+                  <select className="bg-gray-800 text-white px-3 py-2 border-r border-gray-700 rounded-l">
+                    <option value="+91">IND +91</option>
+                    <option value="+971">UAE +971</option>
+                  </select>
+                  <input
+                    type="tel"
+                    placeholder="Phone number"
+                    className="flex-grow px-3 py-2 bg-gray-800 text-white placeholder-gray-400 rounded-r"
+                  />
+                </div>
+
+                <textarea placeholder="Describe your project" value={enq.message} onChange={e => setEnq({ ...enq, message: e.target.value })} className="px-3 py-2 border border-gray-700 rounded bg-gray-800 text-white placeholder-gray-400 sm:col-span-2" rows={4} />
+
+                <div className="sm:col-span-2 flex items-center justify-between">
+                  <button type="submit" className="px-4 py-2 rounded-lg bg-indigo-600 text-white">Send message</button>
+                  <small className="text-xs text-gray-500">Or email us at hello@Creativebae.com</small>
+                </div>
+              </form>
+            </div>
 
             <div className="md:col-span-3 mt-6 text-center text-xs text-white-500">© {new Date().getFullYear()} Creativebae — Crafted with ❤️</div>
           </div>
