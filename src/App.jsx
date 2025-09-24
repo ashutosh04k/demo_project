@@ -199,7 +199,7 @@ export default function App() {
                   <input
                     type="tel"
                     placeholder="Phone number"
-                    className="flex-grow px-3 py-2 bg-gray-800 text-white placeholder-gray-400 rounded-r"
+                    className="w-full px-3 py-2 bg-gray-800 text-white placeholder-gray-400 rounded-r focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent"
                   />
                 </div>
               </div>
@@ -348,9 +348,9 @@ export default function App() {
 
               <div className="mt-4 space-y-2 text-sm text-gray-400">
                 <div>📍 Rasis Business Center Office #77, </div>
-                <div style={{ marginLeft: '15px' }}>3rd Floor –Al Barsha – Dubai – United Arab Emirates</div>
-                <div>✉️ rohan@shadesandmotion.com</div>
-                <div style={{ marginLeft: '15px' }}>sparlee@shadesandmotion.com</div>
+                <div style={{ marginLeft: '18px' }}>3rd Floor –Al Barsha – Dubai – United Arab Emirates</div>
+                {/* <div>✉️ rohan@shadesandmotion.com</div> */}
+                {/* <div style={{ marginLeft: '15px' }}>sparlee@shadesandmotion.com</div> */}
                 <div>📞 +971 502 826 450</div>
                 <div style={{ marginLeft: '18px' }}> +971 547 958 431</div>
               </div>
@@ -372,7 +372,7 @@ export default function App() {
                   <input
                     type="tel"
                     placeholder="Phone number"
-                    className="flex-grow px-3 py-2 bg-gray-800 text-white placeholder-gray-400 rounded-r"
+                    className="w-full px-3 py-2 bg-gray-800 text-white placeholder-gray-400 rounded-r focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent"
                   />
                 </div>
 
@@ -380,12 +380,12 @@ export default function App() {
 
                 <div className="sm:col-span-2 flex items-center justify-between">
                   <button type="submit" className="px-4 py-2 rounded-lg bg-indigo-600 text-white">Send message</button>
-                  <small className="text-xs text-gray-500">Or email us at hello@Creativebae.com</small>
+                  {/* <small className="text-xs text-gray-500"> Or email us at rohan@shadesandmotion.com</small> */}
                 </div>
               </form>
             </div>
 
-            <div className="md:col-span-3 mt-6 text-center text-xs text-white-500">© {new Date().getFullYear()} Creativebae — Crafted with ❤️</div>
+            <div className="md:col-span-3 mt-6 text-center text-xs text-white-500">  Creativebae — Crafted with </div>
           </div>
         </footer>
       </main>
